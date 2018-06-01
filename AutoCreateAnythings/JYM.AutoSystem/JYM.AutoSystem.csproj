@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCD8583F-6837-4886-848F-844CC36C6B67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JYM.AutoSystem</RootNamespace>
+    <AssemblyName>JYM.AutoSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.2\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankPageCommon.cs" />
+    <Compile Include="BatchDebtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchDebtForm.Designer.cs">
+      <DependentUpon>BatchDebtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchInvestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchInvestForm.Designer.cs">
+      <DependentUpon>BatchInvestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchOpenAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchOpenAccount.Designer.cs">
+      <DependentUpon>BatchOpenAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchPurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchPurchaseForm.Designer.cs">
+      <DependentUpon>BatchPurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchRechargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchRechargeForm.Designer.cs">
+      <DependentUpon>BatchRechargeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateContextMenuStripInstance.cs" />
+    <Compile Include="DataGridViewHelper.cs" />
+    <Compile Include="InvestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvestForm.Designer.cs">
+      <DependentUpon>InvestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadPageData.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderForm.Designer.cs">
+      <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RechargeSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechargeSettingForm.Designer.cs">
+      <DependentUpon>RechargeSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedeemCheck.Designer.cs">
+      <DependentUpon>RedeemCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBankAuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBankAuthForm.Designer.cs">
+      <DependentUpon>UserBankAuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoManage.Designer.cs">
+      <DependentUpon>UserInfoManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserTransactionFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserTransactionFrom.Designer.cs">
+      <DependentUpon>UserTransactionFrom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BatchDebtForm.resx">
+      <DependentUpon>BatchDebtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchInvestForm.resx">
+      <DependentUpon>BatchInvestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchOpenAccount.resx">
+      <DependentUpon>BatchOpenAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchPurchaseForm.resx">
+      <DependentUpon>BatchPurchaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchRechargeForm.resx">
+      <DependentUpon>BatchRechargeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestForm.resx">
+      <DependentUpon>InvestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseOrderForm.resx">
+      <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechargeSettingForm.resx">
+      <DependentUpon>RechargeSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedeemCheck.resx">
+      <DependentUpon>RedeemCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBankAuthForm.resx">
+      <DependentUpon>UserBankAuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoManage.resx">
+      <DependentUpon>UserInfoManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserTransactionFrom.resx">
+      <DependentUpon>UserTransactionFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JYM.DAL\JYM.DAL.csproj">
+      <Project>{1e0be057-c0be-4c92-abda-94fbacfeec93}</Project>
+      <Name>JYM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JYM.Lib\JYM.Lib.csproj">
+      <Project>{702d8159-0ed6-4436-bba4-0a22eeb492a9}</Project>
+      <Name>JYM.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JYM.Model\JYM.Model.csproj">
+      <Project>{b519cfad-f928-45e2-ac37-9d25e0907be3}</Project>
+      <Name>JYM.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JYM.Service\JYM.Service.csproj">
+      <Project>{582852a5-bea6-4cda-8556-5414d5baaba3}</Project>
+      <Name>JYM.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
