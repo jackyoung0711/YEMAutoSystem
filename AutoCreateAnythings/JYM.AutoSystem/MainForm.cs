@@ -115,6 +115,7 @@ namespace JYM.AutoSystem
 
         private async void AutoSystemForm_Load(object sender, EventArgs e)
         {
+            //1.此项目加到了github上面了 歇息
             //1. 加载银行卡信息
             this.cb_BankcardNos.Items.Add("请选择银行卡");
             List<string> bankNames = this.dicbankInfo.Keys.ToList();
