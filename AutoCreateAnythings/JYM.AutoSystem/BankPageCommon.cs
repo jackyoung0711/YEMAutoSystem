@@ -18,7 +18,7 @@ namespace JYM.AutoSystem
         private readonly JymService jymService = new JymService();
 
         /// <summary>
-        ///     获取用户流水的东西
+        ///     获取用户流水的东西 哈哈哈
         /// </summary>
         /// <returns></returns>
         public async Task GetUserTransactoin(string userId, string urlB, WebBrowser webBrowser = null, Action action = null)
