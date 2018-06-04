@@ -11,7 +11,7 @@ using MigrationData.DAL;
 namespace JYM.Lib
 {
     /// <summary>
-    ///     自动生成各类数据
+    ///     自动生成各类数据对方的
     /// </summary>
     public static class AutoCreateAnyCode
     {
