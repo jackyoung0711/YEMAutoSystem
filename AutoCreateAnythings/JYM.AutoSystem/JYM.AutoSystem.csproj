@@ -59,41 +59,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankPageCommon.cs" />
-    <Compile Include="BatchDebtForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="BatchDebtForm.cs" />
     <Compile Include="BatchDebtForm.Designer.cs">
       <DependentUpon>BatchDebtForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BatchInvestForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="BatchInvestForm.cs" />
     <Compile Include="BatchInvestForm.Designer.cs">
       <DependentUpon>BatchInvestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BatchOpenAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="BatchOpenAccount.cs" />
     <Compile Include="BatchOpenAccount.Designer.cs">
       <DependentUpon>BatchOpenAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="BatchPurchaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="BatchPurchaseForm.cs" />
     <Compile Include="BatchPurchaseForm.Designer.cs">
       <DependentUpon>BatchPurchaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BatchRechargeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="BatchRechargeForm.cs" />
     <Compile Include="BatchRechargeForm.Designer.cs">
       <DependentUpon>BatchRechargeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateContextMenuStripInstance.cs" />
     <Compile Include="DataGridViewHelper.cs" />
-    <Compile Include="InvestForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="InvestForm.cs" />
     <Compile Include="InvestForm.Designer.cs">
       <DependentUpon>InvestForm.cs</DependentUpon>
     </Compile>
@@ -107,39 +95,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PurchaseOrderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="PurchaseOrderForm.cs" />
     <Compile Include="PurchaseOrderForm.Designer.cs">
       <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RechargeSettingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="RechargeSettingForm.cs" />
     <Compile Include="RechargeSettingForm.Designer.cs">
       <DependentUpon>RechargeSettingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RedeemCheck.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="RedeemCheck.cs" />
     <Compile Include="RedeemCheck.Designer.cs">
       <DependentUpon>RedeemCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserBankAuthForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="UserBankAuthForm.cs" />
     <Compile Include="UserBankAuthForm.Designer.cs">
       <DependentUpon>UserBankAuthForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInfoManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="UserInfoManage.cs" />
     <Compile Include="UserInfoManage.Designer.cs">
       <DependentUpon>UserInfoManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserTransactionFrom.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="UserTransactionFrom.cs" />
     <Compile Include="UserTransactionFrom.Designer.cs">
       <DependentUpon>UserTransactionFrom.cs</DependentUpon>
     </Compile>
